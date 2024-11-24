@@ -1,0 +1,11 @@
+<h2>Task1</h2>
+
+<button (click)="addArray()">Add line</button>
+
+<ul>
+  <li *ngFor="let list of arrayList" (click)="displayContent(list)">
+    {{ list }}
+  </li>
+</ul>
+
+<p *ngIf="lastClicked">Last clicked item: {{ lastClicked }}</p>

@@ -1,0 +1,38 @@
+<h2>Task2</h2>
+
+<p [ngStyle]="{ 'background-color': selectedColor }">
+  This paragraph changes color based on selected option.
+</p>
+
+<label
+  ><input
+    type="radio"
+    name="color"
+    value="blue"
+    (change)="changeColor($event)"
+  />Blue</label
+>
+<label
+  ><input
+    type="radio"
+    name="color"
+    value="red"
+    (change)="changeColor($event)"
+  />Red</label
+>
+<label
+  ><input
+    type="radio"
+    name="color"
+    value="green"
+    (change)="changeColor($event)"
+  />Green</label
+>
+<label
+  ><input
+    type="radio"
+    name="color"
+    value="gold"
+    (change)="changeColor($event)"
+  />Gold</label
+>

@@ -1,0 +1,11 @@
+<h2>Task3</h2>
+
+<ng-container *ngFor="let element of elements">
+  <div
+    class="clickable"
+    *ngIf="element.visible"
+    (click)="removeElementById(element.id)"
+  >
+    {{ element.text }}
+  </div>
+</ng-container>
